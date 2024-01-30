@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { cuisineData,restaurantsData } from '../data'
-import RestaurantCard from '../RestaurantCard';
+import RestaurantCard from './RestaurantCard';
 
 const Home = () => {
 
@@ -26,8 +26,7 @@ const Home = () => {
 				))}
 		  </div>
 		  <div>
-			  {filteredData.map(res => <RestaurantCard card={res} key={res.id} />)}
-			  {/* <RestaurantCard/> */}
+			  {filteredData.map(res =><RestaurantCard card={res} key={res.id} />)}
 		  </div>
 		</div>
 	);
